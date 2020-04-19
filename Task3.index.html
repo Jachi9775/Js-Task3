@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <script>
+        function stringModulus(num){
+      
+      let dividedArr = [];
+      let output;
+      
+      for(let i = 1; i <= num; i++){
+          
+          if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+              output = "yu-gi-oh";
+          } else if (i % 3 === 0 && i % 5 === 0) {
+              output = "gi-oh";
+          } else if (i % 2 === 0 && i % 5 === 0){
+             output = "yu-oh";
+          } else if (i % 2 === 0 && i % 3 === 0){
+              output = "yu-gi";
+          } else if (i % 2 === 0){
+              output = "yu";
+          } else if (i % 3 === 0){
+              output = "gi";
+          } else if (i % 5 === 0){
+              output = "oh";
+          } else{
+              output = i;
+          }
+          
+          dividedArr.push(output);
+  
+      };
+      
+          console.log(dividedArr);
+          return dividedArr;                          
+  };
+  stringModulus(100);
+  stringModulus(82);
+
+    </script>
+</body>
+</html>
